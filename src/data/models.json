@@ -3,6 +3,141 @@
   "version": "1.0.0",
   "data": [
     {
+      "id": "deepseek-ai/DeepSeek-V3-0324",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "DeepSeek-V3-0324",
+      "slug": "chutes-deepseek-ai-deepseek-v3-0324"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "DeepSeek-R1",
+      "slug": "chutes-deepseek-ai-deepseek-r1"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "DeepSeek-R1-0528",
+      "slug": "chutes-deepseek-ai-deepseek-r1-0528"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "DeepSeek-V3",
+      "slug": "chutes-deepseek-ai-deepseek-v3"
+    },
+    {
+      "id": "NousResearch/DeepHermes-3-Mistral-24B-Preview",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "DeepHermes-3-Mistral-24B-Preview",
+      "slug": "chutes-nousresearch-deephermes-3-mistral-24b-preview"
+    },
+    {
+      "id": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "DeepHermes-3-Llama-3-8B-Preview",
+      "slug": "chutes-nousresearch-deephermes-3-llama-3-8b-preview"
+    },
+    {
+      "id": "tngtech/DeepSeek-R1T-Chimera",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "DeepSeek-R1T-Chimera",
+      "slug": "chutes-tngtech-deepseek-r1t-chimera"
+    },
+    {
+      "id": "BAAI/bge-large-en-v1.5",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "bge-large-en-v1.5",
+      "slug": "chutes-baai-bge-large-en-v1-5"
+    },
+    {
+      "id": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "slug": "chutes-chutesai-llama-4-maverick-17b-128e-instruct-fp8"
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "Qwen3-235B-A22B",
+      "slug": "chutes-qwen-qwen3-235b-a22b"
+    },
+    {
+      "id": "unsloth/gemma-3-27b-it",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "gemma-3-27b-it",
+      "slug": "chutes-unsloth-gemma-3-27b-it"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "DeepSeek-R1-0528-Qwen3-8B",
+      "slug": "chutes-deepseek-ai-deepseek-r1-0528-qwen3-8b"
+    },
+    {
+      "id": "Qwen/Qwen3-32B",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "Qwen3-32B",
+      "slug": "chutes-qwen-qwen3-32b"
+    },
+    {
+      "id": "Qwen/QwQ-32B",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "QwQ-32B",
+      "slug": "chutes-qwen-qwq-32b"
+    },
+    {
+      "id": "ArliAI/QwQ-32B-ArliAI-RpR-v1",
+      "object": "model",
+      "provider": {
+        "id": "chutes"
+      },
+      "name": "QwQ-32B-ArliAI-RpR-v1",
+      "slug": "chutes-arliai-qwq-32b-arliai-rpr-v1"
+    },
+    {
       "id": "meta-llama/llama-3.1-70b-instruct/fp-8",
       "object": "model",
       "provider": {

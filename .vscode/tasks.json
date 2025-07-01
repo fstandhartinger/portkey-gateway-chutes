@@ -4,33 +4,60 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Install Dependencies",
       "type": "shell",
-      "label": "npx tsc",
-      "command": "npx",
-      "args": [
-        "tsc",
-        "--sourcemap",
-        "true",
-        "--outDir",
-        "${workspaceFolder}/build"
-      ],
-      "problemMatcher": ["$tsc"],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "type": "shell",
-      "label": "cleanup build",
-      "command": "rm",
-      "args": ["-rf", "${workspaceFolder}/build"],
-      "problemMatcher": [],
+      "command": "npm",
+      "args": ["install"],
       "group": "build",
       "presentation": {
+        "echo": true,
         "reveal": "always",
-        "panel": "new"
-      }
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build TypeScript",
+      "type": "shell",
+      "command": "npx",
+      "args": ["tsc", "--noEmit"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "npm",
+      "args": ["test"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Chutes Integration Test",
+      "type": "shell",
+      "command": "node",
+      "args": ["../tmp/test_chutes_integration.js"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
     }
   ]
 }
