@@ -18,21 +18,21 @@ if (!CHUTES_API_KEY) {
 
 // List of 15 Chutes.ai models to test
 const CHUTES_MODELS = [
-  'microsoft/phi-4',
-  'meta-llama/meta-llama-3.1-8b-instruct',
-  'meta-llama/meta-llama-3.1-70b-instruct',
-  'meta-llama/meta-llama-3.1-405b-instruct',
-  'mistralai/mistral-7b-instruct-v0.3',
-  'mistralai/mistral-large-instruct-2411',
-  'google/gemma-2-9b-it',
-  'google/gemma-2-27b-it',
-  'qwen/qwen2.5-72b-instruct',
-  'qwen/qwen2.5-coder-32b-instruct',
-  'nvidia/llama-3.1-nemotron-70b-instruct',
-  'deepseek-ai/deepseek-coder-33b-instruct',
-  'anthropic/claude-3-5-haiku-20241022',
-  'x-ai/grok-2-1212',
-  'liquid/lfm-40b-moe',
+  'deepseek-ai/DeepSeek-V3-0324',
+  'deepseek-ai/DeepSeek-R1',
+  'deepseek-ai/DeepSeek-R1-0528',
+  'deepseek-ai/DeepSeek-V3',
+  'NousResearch/DeepHermes-3-Mistral-24B-Preview',
+  'NousResearch/DeepHermes-3-Llama-3-8B-Preview',
+  'tngtech/DeepSeek-R1T-Chimera',
+  'BAAI/bge-large-en-v1.5',
+  'chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8',
+  'Qwen/Qwen3-235B-A22B',
+  'unsloth/gemma-3-27b-it',
+  'deepseek-ai/DeepSeek-R1-0528-Qwen3-8B',
+  'Qwen/Qwen3-32B',
+  'Qwen/QwQ-32B',
+  'ArliAI/QwQ-32B-ArliAI-RpR-v1',
 ];
 
 // Helper function to make HTTP requests

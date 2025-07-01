@@ -10,9 +10,9 @@ import { CHUTES } from '../../globals';
 
 const ChutesConfig: ProviderConfigs = {
   api: ChutesAPIConfig,
-  chatComplete: chatCompleteParams,
-  complete: completeParams,
-  embed: embedParams,
+  chatComplete: chatCompleteParams([], {}),
+  complete: completeParams([], {}),
+  embed: embedParams([], {}),
   responseTransforms: responseTransformers(CHUTES, {
     chatComplete: true,
     complete: true,

@@ -1143,10 +1143,9 @@ export function constructConfigFromRequestHeaders(
 
     if (!parsedConfigJson.provider && !parsedConfigJson.targets) {
       parsedConfigJson.provider = requestHeaders[`x-${POWERED_BY}-provider`];
-      parsedConfigJson.api_key = requestHeaders['authorization']?.replace(
-        'Bearer ',
-        ''
-      );
+      parsedConfigJson.api_key =
+        requestHeaders[`x-${POWERED_BY}-api-key`] ||
+        requestHeaders['authorization']?.replace('Bearer ', '');
 
       if (parsedConfigJson.provider === AZURE_OPEN_AI) {
         parsedConfigJson = {
@@ -1248,9 +1247,13 @@ export function constructConfigFromRequestHeaders(
     ]) as any;
   }
 
+  const providedApiKey =
+    requestHeaders[`x-${POWERED_BY}-api-key`] ||
+    requestHeaders['authorization']?.replace('Bearer ', '');
+
   return {
     provider: requestHeaders[`x-${POWERED_BY}-provider`],
-    apiKey: requestHeaders['authorization']?.replace('Bearer ', ''),
+    apiKey: providedApiKey,
     defaultInputGuardrails: defaultsConfig.input_guardrails,
     defaultOutputGuardrails: defaultsConfig.output_guardrails,
     ...(requestHeaders[`x-${POWERED_BY}-provider`] === AZURE_OPEN_AI &&
