@@ -60,6 +60,7 @@ import KlusterAIConfig from './kluster-ai';
 import NscaleConfig from './nscale';
 import HyperbolicConfig from './hyperbolic';
 import { FeatherlessAIConfig } from './featherless-ai';
+import ChutesConfig from './chutes';
 
 const Providers: { [key: string]: ProviderConfigs } = {
   openai: OpenAIConfig,
@@ -120,6 +121,7 @@ const Providers: { [key: string]: ProviderConfigs } = {
   nscale: NscaleConfig,
   hyperbolic: HyperbolicConfig,
   'featherless-ai': FeatherlessAIConfig,
+  chutes: ChutesConfig,
 };
 
 export default Providers;

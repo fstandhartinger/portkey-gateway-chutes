@@ -37,4 +37,4 @@ const ChutesAPIConfig: ProviderAPIConfig = {
   },
 };
 
-export default ChutesAPIConfig; 
+export default ChutesAPIConfig;

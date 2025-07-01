@@ -20,4 +20,4 @@ const ChutesConfig: ProviderConfigs = {
   }),
 };
 
-export default ChutesConfig; 
+export default ChutesConfig;
